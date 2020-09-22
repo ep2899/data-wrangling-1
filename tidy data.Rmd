@@ -1,8 +1,6 @@
 ---
 title: "tidy data"
 output: github_document
-editor_options: 
-  chunk_output_type: inline
 ---
 
 ```{r setup}
@@ -45,5 +43,5 @@ pulse_data =
     values_to = "bdi"
   ) %>% 
   relocate(id, visit) %>% 
-  mutate(visit = recode (visit, "bl" = "00m"))
+  mutate(visit = recode(visit, "bl" = "00m"))
 ```
